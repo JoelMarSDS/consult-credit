@@ -1,0 +1,30 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: consult-credit
+  datasource:
+    url: jdbc:postgresql://${HOST_DB:localhost}:5432/public
+    username: ${USER_ADMIN:postgres}
+    password: ${PASS_ADMIN:admin}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost}:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring:
+          json:
+            add:
+              type:
+                headers: false

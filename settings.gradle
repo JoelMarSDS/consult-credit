@@ -1,0 +1,5 @@
+rootProject.name = 'consult-credit'
+
+include('consult-credit-api')
+include('consult-credit-domain')
+include('kafka-logging')
