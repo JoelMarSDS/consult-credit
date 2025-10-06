@@ -49,7 +49,6 @@ public class ConsultCreditService {
         }
     }
 
-    // Serviço que consulta crédito por Número de identificação do credito
     public Credit findCredit(String creditNumber) {
         try {
             log.info("Pesquisando Numero de identificação do crédito no banco");
