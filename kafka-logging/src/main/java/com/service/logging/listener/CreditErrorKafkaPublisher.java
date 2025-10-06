@@ -7,7 +7,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-// Observador de erro de pesquisa
 @Component
 public class CreditErrorKafkaPublisher {
 

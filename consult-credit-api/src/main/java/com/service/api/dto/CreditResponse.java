@@ -6,7 +6,6 @@ import com.service.domain.model.Credit;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-//DTO de respota da api
 public record CreditResponse(
         @JsonProperty("numeroCredito")
         String creditNumber,

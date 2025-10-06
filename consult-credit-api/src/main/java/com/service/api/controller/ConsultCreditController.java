@@ -25,7 +25,6 @@ public class ConsultCreditController {
         this.consultCreditService = consultCreditService;
     }
 
-    // Endpoint para consultar crédito por NFSe
     @Operation(summary = "Obtém uma lista de créditos", description = "Retorna uma lista de créditos constituídos com base no número da NFS-e.")
     @GetMapping("/{numeroNfse}")
     public ResponseEntity<List<CreditResponse>> findCredits(
@@ -36,7 +35,6 @@ public class ConsultCreditController {
         return ResponseEntity.ok(creditResponse.stream().map(CreditResponse::new).toList());
     }
 
-    // Endpoint para consultar crédito por Número de identificação do crédito
     @Operation(summary = "Obtém um único credito.", description = "Retorna os detalhes de um crédito constituído específico com base no número do crédito constituído.")
     @GetMapping("/credito/{numeroCredito}")
     public ResponseEntity<CreditResponse> findCredit(

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-// Repositório da tabela de crédito
 @Repository
 public interface CreditRepository extends JpaRepository<Credit, Long> {
 

@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-// Classe unicamente para inserir dados similados.
 @Component
 public class InitialDataRunner implements CommandLineRunner {
 
@@ -34,7 +33,7 @@ public class InitialDataRunner implements CommandLineRunner {
 
             log.info(">>> Inserindo novos dados via CommandLineRunner.");
         } else {
-            log.info(">>> Banco de dados já possui dados, pulando insert manual.");
+            log.info(">>> Banco de dados já possui dados, pulando insert.");
         }
 
         log.info("-----------------------------------------------------");

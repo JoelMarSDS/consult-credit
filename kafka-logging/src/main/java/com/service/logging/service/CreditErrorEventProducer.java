@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-//Produtor de mensagem de pesquisa com erro
 @Service
 public class CreditErrorEventProducer {
 
