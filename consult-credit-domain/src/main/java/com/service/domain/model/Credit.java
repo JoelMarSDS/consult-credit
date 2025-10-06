@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-//Entidade representando a tabela no banco de dados
 @Entity
 @Table(name = "credito")
 public class Credit {

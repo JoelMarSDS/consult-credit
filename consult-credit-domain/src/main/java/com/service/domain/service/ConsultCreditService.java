@@ -28,7 +28,6 @@ public class ConsultCreditService {
         this.eventPublisher = eventPublisher;
     }
 
-    // Serviço que consulta crédito por NFSe na base de dados
     public List<Credit> findCredits(String nfseNumber) {
         try {
             log.info("Pesquisando NFSe no banco.");

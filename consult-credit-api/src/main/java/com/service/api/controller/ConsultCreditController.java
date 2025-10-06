@@ -25,7 +25,6 @@ public class ConsultCreditController {
         this.consultCreditService = consultCreditService;
     }
 
-    // Endpoint para consultar crédito por NFSe
     @Operation(summary = "Obtém uma lista de créditos", description = "Retorna uma lista de créditos constituídos com base no número da NFS-e.")
     @GetMapping("/{numeroNfse}")
     public ResponseEntity<List<CreditResponse>> findCredits(
