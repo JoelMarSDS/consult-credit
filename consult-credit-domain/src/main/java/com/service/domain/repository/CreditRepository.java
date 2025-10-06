@@ -10,6 +10,5 @@ import java.util.List;
 public interface CreditRepository extends JpaRepository<Credit, Long> {
 
     List<Credit> findAllByNfseNumber(String nfseNumber);
-    // Remoção futura
     Credit findByCreditNumber(String creditNumber);
 }
